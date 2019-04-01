@@ -3,5 +3,9 @@ export default {
   getAllProducts() {
     return fetch("http://localhost:8088/products")
     .then(response => response.json())
+  },
+  getAllProductTypes() {
+    return fetch("http://localhost:8088/productTypes")
+    .then(response => response.json())
   }
 }

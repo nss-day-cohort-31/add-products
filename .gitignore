@@ -1,5 +1,5 @@
 .DS_Store
-  .vscode
-  node_modules
-  public/*.js
-  api
+.vscode
+node_modules
+public/*.js
+api
