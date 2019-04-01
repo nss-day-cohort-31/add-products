@@ -12,7 +12,7 @@ export default {
     productHeader.textContent = product.name;
 
     const productParagraph = document.createElement("p");
-    productParagraph.textContent = product.productTypeId;
+    productParagraph.textContent = product.productType.name;
 
     productArticle.appendChild(productHeader);
     productArticle.appendChild(productParagraph);

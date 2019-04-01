@@ -38,6 +38,16 @@
       "id": 5,
       "name": "Xbox One",
       "productTypeId": 2
+    },
+    {
+      "name": "Kit Kat",
+      "productTypeId": 1,
+      "id": 6
+    },
+    {
+      "name": "iPhone",
+      "productTypeId": 2,
+      "id": 7
     }
   ]
 }
