@@ -1,5 +1,6 @@
 // The productForm component that listens for when the submit button is pressed. When it is triggered, a new product should be POSTed to the API. It should import the ProductCollection component.
 import productCollection from "./productCollection";
+import productList from "./productList";
 
 const productForm = {
   buildProductForm() {
@@ -51,7 +52,8 @@ const productForm = {
       productTypeId: Number(productTypeId)
     };
 
-    productCollection.postNewProduct(newProduct);
+    productCollection.postNewProduct(newProduct)
+    .then(() => productList.listAllProducts());
   }
 };
 

@@ -2,5 +2,6 @@
 import productList from "./productList";
 import productForm from "./productForm";
 
-productList.listAllProducts();
 productForm.buildProductForm();
+productList.setupProductsContainer();
+productList.listAllProducts();

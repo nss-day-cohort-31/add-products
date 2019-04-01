@@ -7,15 +7,26 @@ export default {
     productCollection.getAllProducts().then(productsResponse => {
       console.log(productsResponse);
 
-      const productsSection = document.createElement("section");
+      const productsFragment = document.createDocumentFragment();
 
       productsResponse.forEach((theProduct, indexNumber) => {
         const productHTML = product.buildProduct(theProduct);
-        productsSection.appendChild(productHTML);
+        productsFragment.appendChild(productHTML);
       });
 
-      const displayContainer = document.querySelector("#display-container");
-      displayContainer.appendChild(productsSection);
+      const productsSection = document.querySelector("#products-section");
+
+      while (productsSection.firstChild) {
+        productsSection.removeChild(productsSection.firstChild);
+      }
+
+      productsSection.appendChild(productsFragment);
     });
+  },
+  setupProductsContainer() {
+    const productsSection = document.createElement("section");
+    productsSection.id = "products-section"
+    const displayContainer = document.querySelector("#display-container");
+    displayContainer.appendChild(productsSection);
   }
 };
