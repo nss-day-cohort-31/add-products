@@ -1,0 +1,39 @@
+{
+  "productTypes": [
+    {
+      "id": 1,
+      "name": "Candy"
+    },
+    {
+      "id": 2,
+      "name": "Electronics"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Lollipop",
+      "productTypeId": 1
+    },
+    {
+      "id": 2,
+      "name": "iPad",
+      "productTypeId": 2
+    },
+    {
+      "id": 3,
+      "name": "Snickers",
+      "productTypeId": 1
+    },
+    {
+      "id": 4,
+      "name": "Baby Ruth",
+      "productTypeId": 1
+    },
+    {
+      "id": 5,
+      "name": "Xbox One",
+      "productTypeId": 2
+    }
+  ]
+}
